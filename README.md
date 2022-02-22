@@ -34,7 +34,7 @@
 - #about
 > velikost obrázku: 40%, 50% (po najetí kurzoru) <br />
 > mezera mezi obrázkem a odstavcem: 40px (vertikální), 80px (horizontálně) <br />
-> implementujte styly tak, aby bylo možné přidat další elementy .about-item a obrázky se pozicovaly <br /> > střídavě na levou a pravou stranu
+> implementujte styly tak, aby bylo možné přidat další elementy .about-item a obrázky se pozicovaly <br />střídavě na levou a pravou stranu
 - #team
 > karty mají stejnou šířku <br />
 > mezera mezi kartami: 20px
