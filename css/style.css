@@ -1,8 +1,296 @@
 /*
- * Login:
+ * Login: xturyt00
  *
  * Doplnte sve reseni.
  *
  * Nezapomente pridat strucne hromadne komentare pro pravidla jednotlivych sekci
  * a pro netrivialni useky kodu (napr. bubliny v sekci #refs)
  */
+
+
+/* Global styling */
+
+:root {
+    --blue: steelblue;
+    --lightGray: #898989;
+    --gray: #bfbfbf;
+    --darkGray: #4d4d4d;
+    --white: #f7f7f7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Sans';
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    max-width: 1200px;
+    min-width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+section {
+    padding: 60px 0 80px;
+}
+
+
+/* Header */
+
+#header {
+    min-width: 400px;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+#header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#header-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 10px;
+}
+
+#header-menu i {
+    color: var(--blue);
+    padding-right: 5px;
+}
+
+#logo {
+    font-size: 25px;
+    font-family: 'Special Elite';
+}
+
+#logo a {
+    color: var(--blue);
+}
+
+
+/* networks & contacts */
+
+#networks {
+    font-size: 25px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#contacts a {
+    color: var(--lightGray);
+}
+
+#networks,
+#contacts {
+    text-align: right;
+    color: var(--lightGray);
+}
+
+#contacts span:first-child {
+    padding-right: 10px;
+}
+
+
+/* navigation */
+
+#navigation {
+    letter-spacing: .05em;
+    font-size: 13px;
+    padding: 5px 15px;
+    border: 1px;
+    grid-column: 1;
+    grid-row: 2;
+    text-transform: uppercase;
+}
+
+#navigation ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navigation li {
+    padding: 10px 5px;
+}
+
+#navigation a {
+    color: var(--gray);
+}
+
+
+/* Header Title & Button */
+
+#header-title {
+    color: white;
+    margin: 0 0 20px 20px;
+    height: 66%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#header-title h1 {
+    font-size: 64px;
+}
+
+#get-started {
+    display: inline;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--darkGray);
+}
+
+#get-started a {
+    color: var(--lightGray);
+}
+
+
+/* Section title */
+
+section:nth-child(2n+1):not(#stats):not(#price) h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+
+/* services */
+
+#services .content>p {
+    text-align: center;
+    color: var(--lightGray);
+    font-size: 18px;
+}
+
+#services .content>div {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 40px;
+}
+
+.services-column {
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px var(--gray);
+    border-radius: 5px;
+}
+
+.services-card p {
+    color: var(--gray);
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.services-card {
+    padding: 10px;
+}
+
+.services-column:nth-child(2n+1) {
+    justify-self: end;
+}
+
+.services-column img {
+    border-radius: 5px;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--blue);
+    margin: 10px 0 20px;
+}
+
+.services-column img:last-child {
+    display: none;
+}
+
+
+/* About */
+
+#about {
+    background-color: var(--white);
+}
+
+#about p {
+    color: var(--lightGray);
+}
+
+.about-item:nth-child(2n+1) img {
+    float: left;
+    margin: 0 80px 40px 0;
+}
+
+.about-item:nth-child(2n) img {
+    float: right;
+    margin: 80px 0 40px 80px;
+}
+
+.about-item p {
+    padding-top: 40px;
+    text-align: justify;
+}
+
+.about-item:not(:first-child) h2 {
+    margin-top: 80px;
+}
+
+.about-item img {
+    display: block;
+    width: 40%;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.about-item img:hover {
+    width: 50%;
+}
+
+
+/* Team */
+
+#team .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+#team h2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.team-card {
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--gray);
+    text-align: center;
+}
