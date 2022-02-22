@@ -1,4 +1,5 @@
 # ITW Project
+Cílem projektu je vyzkoušet si základní znalosti jazyka CSS, jednotlivých CSS pravidel a schopnost aplikovat různé typy CSS selektorů.
 ## What is ITW?
  Introduction, principles of the Internet, addresses, documents. HTML language, bookmarks, simple presentations. Quality style, integration with HTML. Adaptive design, design for mobile devices. Download JavaScript. Design web presentation, navigation structure. Usability and accessibility of websites. Search engine optimization. [Click here for more information](https://www.fit.vut.cz/study/course/244890/.cs)
  ## Project task in czech
