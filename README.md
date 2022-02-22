@@ -2,62 +2,62 @@
 ## What is ITW?
  Introduction, principles of the Internet, addresses, documents. HTML language, bookmarks, simple presentations. Quality style, integration with HTML. Adaptive design, design for mobile devices. Download JavaScript. Design web presentation, navigation structure. Usability and accessibility of websites. Search engine optimization. [Click here for more information](https://www.fit.vut.cz/study/course/244890/.cs)
  ## Project task in czech
-### #header (záhlaví)
-výška: velikost viewportu, ale minimálně 400px
+- #header (záhlaví)
+> výška: velikost viewportu, ale minimálně 400px
 - menu:
 > horní okraj: 10px
 - logo:
-> písmo: 25px
-> vzdálenost mezi položkami menu: 10px
+> písmo: 25px <br />
+> vzdálenost mezi položkami menu: 10px <br />
 - navigace:
-> písmo 13px
-> mezera mezi písmeny: .05em
-> vycpávka: 5px vertikální a 15px horizontálně
+> písmo 13px <br />
+> mezera mezi písmeny: .05em <br />
+> vycpávka: 5px vertikální a 15px horizontálně <br />
 > rámeček: 1px
 - hlavní nadpis:
-> písmo: 64px, white
-> odsazení zespodu a zleva: 20px
-> tlačítko Get started:
-> větší písmo
-> vycpávka: 20px
-> rámeček: 2px
-> zaoblení: 15px
+> písmo: 64px, white <br />
+> odsazení zespodu a zleva: 20px <br />
+> tlačítko Get started: <br />
+> větší písmo <br />
+> vycpávka: 20px <br />
+> rámeček: 2px <br />
+> zaoblení: 15px <br />
 > hlavní nadpis spolu s tlačítkem umístěn v 2/3 záhlaví
 - #services
-> šířka karty: 300px
-> mezera mezi kartami: 40px
-> rámeček s ikonou:
-> velikost: 50px
-> vycpávka: 5px
-> čára rámečku: 1px
+> šířka karty: 300px <br />
+> mezera mezi kartami: 40px <br />
+> rámeček s ikonou: <br />
+> velikost: 50px <br />
+> vycpávka: 5px <br />
+> čára rámečku: 1px <br />
 > implementujte styly tak, aby bylo možné přidat další elementy .services-column
 - #about
-> velikost obrázku: 40%, 50% (po najetí kurzoru)
-> mezera mezi obrázkem a odstavcem: 40px (vertikální), 80px (horizontálně)
-> implementujte styly tak, aby bylo možné přidat další elementy .about-item a obrázky se pozicovaly > střídavě na levou a pravou stranu
+> velikost obrázku: 40%, 50% (po najetí kurzoru) <br />
+> mezera mezi obrázkem a odstavcem: 40px (vertikální), 80px (horizontálně) <br />
+> implementujte styly tak, aby bylo možné přidat další elementy .about-item a obrázky se pozicovaly <br /> > střídavě na levou a pravou stranu
 - #team
-> karty mají stejnou šířku
+> karty mají stejnou šířku <br />
 > mezera mezi kartami: 20px
 - #stats
-> karty mají stejnou šířku
-> maximální šířka karty: 300px
-> minimální mezera mezi kartami: 20px
+> karty mají stejnou šířku <br />
+> maximální šířka karty: 300px <br />
+> minimální mezera mezi kartami: 20px <br />
 > velikost písma ikonky: 32px
 - #price
-> šířka tabulka: 80%
-> mezera mezi řádky 20px
-> vycpávka řádku: 20px
+> šířka tabulka: 80% <br />
+> mezera mezi řádky 20px <br />
+> vycpávka řádku: 20px <br />
 > vycpávka tlačítka: 20px
 - #refs
-> karty mají stejnou šířku
-> maximální šířka karty: 400px
+> karty mají stejnou šířku <br />
+> maximální šířka karty: 400px <br />
 > velikost obrázku: 60px
 - #contact
-> výška mapy: 400px
-> mezera mezi vstupními položkami: 20px
-> vycpávka vstupních položek: 10px
-> text nevalidního vstupu: red
-> barva tlačítka po najetí kurzorem: green 10: #footer
-> horní a spodní odsazení sekce: 40px
+> výška mapy: 400px <br />
+> mezera mezi vstupními položkami: 20px <br />
+> vycpávka vstupních položek: 10px <br />
+> text nevalidního vstupu: red <br />
+> barva tlačítka po najetí kurzorem: green 10: #footer <br />
+> horní a spodní odsazení sekce: 40px <br />
 > Vlastnosti, které nejsou výše specifikovány se pokuste odhadnout z uvedených snímků (není nutné, > aby bylo na pixel přesné - viz. pozn. #2)
 
