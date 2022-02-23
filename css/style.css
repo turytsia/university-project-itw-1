@@ -1,14 +1,39 @@
 /*
  * Login: xturyt00
- *
- * Doplnte sve reseni.
- *
- * Nezapomente pridat strucne hromadne komentare pro pravidla jednotlivych sekci
- * a pro netrivialni useky kodu (napr. bubliny v sekci #refs)
  */
 
 
-/* Global styling */
+/* 
+ *    At the beginning I want to describe properties that I used
+ *    so then I could stress on something that was really interesting,
+ *    without writing tons of comments on each section.
+ *
+ *    Properties:
+ *    width - width of the element
+ *    height - height of the element
+ *    font-family - text fonts
+ *    color - text color
+ *    margin - indent outside
+ *    padding - indent inside
+ *    box-sizing - if I say with: 300px and padding 10px, the with will still be 300px [border-box]
+ *    background-size - The size of the image in the background
+ *    background-repeat - if the original image is too big it will repeat it self
+ *    background-position - The position of the images that will be kept
+ *    display - the way that the element displays itself on the screen
+ *    justify-content - aligns items by X (flex)
+ *    align-items - aligns items by Y (flex)
+ *    justify-self - aligns items by X (grid)
+ *    transition - defines time of animation or change of a state
+ *
+ *    Pseudo-elements:
+ *    tag::after - creates element after tag
+ *    tag::before - creates element before tag
+ */
+
+
+/* 
+ *    Global styling & Styling the elements that repeat.
+ */
 
 :root {
     --blue: steelblue;
@@ -18,7 +43,9 @@
     --white: #f7f7f7;
 }
 
-body {
+body,
+input,
+textarea {
     font-family: 'PT Sans';
 }
 
@@ -34,8 +61,17 @@ a {
 
 .content {
     max-width: 1200px;
+    min-width: 768px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.content>h2 {
+    font-size: 40px;
 }
 
 h3 {
@@ -44,15 +80,34 @@ h3 {
 
 p {
     line-height: 1.7em;
+    font-size: 14px;
 }
 
 section {
     padding: 60px 0 80px;
-    min-width: 768px;
 }
 
 
-/* Header */
+/* 
+ *    Selecting section's titles that repeat its style
+ */
+
+section:nth-child(2n+1):not(#stats):not(#price) h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+
+/* 
+ *    Header.
+ *
+ *    Like in most sections I decided to use display flex or grid,
+ *    because of tricky structure of HTML (for inst. in header content)
+ *
+ *    Due to Flex I could easily make a row of elements
+ *    And If I needed a row with special element's positioning without changing HTML - I used Grid.
+ */
 
 #header {
     min-height: 400px;
@@ -63,10 +118,16 @@ section {
     height: 100vh;
 }
 
-#header .content {
+#header .content,
+#footer .content {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+}
+
+#header .content {
+    align-items: stretch;
+    flex-direction: column;
     height: 100%;
 }
 
@@ -159,16 +220,23 @@ section {
 }
 
 
-/* Header Title & Button */
+/* 
+ *    Header title & button.
+ *
+ *    Here i'm not sure about 2/3 height and my way of doing it with 66%
+ *    I assume there is a more proper way for it. But it looks fine I guess.
+ *
+ *    Here I also used flex-direction that changes x and y to make a column
+ */
 
 #header-title {
-    color: white;
-    margin: 0 0 20px 20px;
-    height: 66%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    color: white;
+    margin: 0 0 20px 20px;
+    height: 66%;
 }
 
 #header-title h1 {
@@ -177,7 +245,6 @@ section {
 
 #get-started {
     margin-top: 40px;
-    display: inline;
     padding: 20px;
     border-radius: 15px;
     border: 2px solid var(--darkGray);
@@ -198,22 +265,16 @@ section {
 }
 
 
-/* Section title */
-
-section:nth-child(2n+1):not(#stats):not(#price) h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 40px;
-    padding-bottom: 30px;
-}
-
-
-/* services */
+/* 
+ *    Services.
+ *
+ *    Here I used nth-child selector to select odd cells in grid 
+ *    and move them to the right.
+ */
 
 #services .content>p {
     text-align: center;
     color: var(--lightGray);
-    font-size: 18px;
 }
 
 #services .content>div {
@@ -234,7 +295,6 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 .services-card p {
     color: var(--gray);
     padding: 5px 0;
-    font-size: 14px;
 }
 
 .services-card {
@@ -276,7 +336,12 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 
-/* About */
+/* 
+ *    About.
+ *
+ *    In this section I used float for images, so my text could stucture itself 
+ *    around the image.
+ */
 
 #about {
     background-color: var(--white);
@@ -302,7 +367,7 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 .about-item:not(:first-child) h2 {
-    margin-top: 80px;
+    margin-top: 110px;
 }
 
 .about-item img {
@@ -317,7 +382,12 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 
-/* Team */
+/* 
+ *    Team.
+ *
+ *    In here I used positioning (relative & absolute) to stick out an icon inside the card
+ *    on top of it by 50%. [ (font-size + padding) / 2 ]
+ */
 
 #team .content {
     display: grid;
@@ -343,7 +413,6 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 .team-card h3 {
-    font-size: 24px;
     padding: 30px 0 10px;
 }
 
@@ -356,7 +425,6 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 .team-card p {
-    font-size: 14px;
     padding: 5px 10px 10px 10px;
     color: var(--gray);
 }
@@ -394,7 +462,6 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 
 .stats-card p {
     color: var(--gray);
-    font-size: 14px;
     margin-top: 10px;
 }
 
@@ -411,7 +478,9 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 
-/* price */
+/* 
+ *    Price.
+ */
 
 #price {
     background-color: var(--white);
@@ -423,8 +492,7 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 #price thead th {
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding: 0 0 20px 20px;
 }
 
 #price table {
@@ -439,12 +507,12 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
     transition: .5s;
 }
 
-#price tr:hover {
+#price tbody tr:hover {
     background-color: white;
     color: var(--blue);
 }
 
-#price tr:hover td {
+#price tbody tr:hover td {
     color: var(--blue);
 }
 
@@ -478,7 +546,18 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 
-/* refs */
+/* 
+ *    Refs.
+ *    
+ *    Main problem here were triangles and double parentheses.
+ *    I didn't see the parentheses at first, but It clicked after a few minutes.
+ *
+ *    The triangle. Well, the idea is to make thick borders in a rectangle,
+ *    then I need to remove background. There will be left 4 triangles, that point in
+ *    different direction and All I need is to remove all except the right one that I need.
+ *
+ *    On this webpage very good demo with it: https://css-tricks.com/snippets/css/css-triangle/
+ */
 
 #refs {
     border-bottom: 1px dashed black;
@@ -560,7 +639,9 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 
-/* contact */
+/* 
+ *    Contact.
+ */
 
 #contact .content {
     display: grid;
@@ -587,7 +668,6 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 #contact input,
 #contact textarea {
     padding: 10px;
-    font-family: 'PT Sans';
     color: var(--blue);
     border: 1px solid var(--blue);
     border-radius: 5px;
@@ -629,17 +709,13 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 
-/* Footer */
+/* 
+ *    Footer.
+ */
 
 #footer {
     background-color: black;
     padding: 40px 0;
-}
-
-#footer .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #footer span:first-child {
