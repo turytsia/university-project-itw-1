@@ -2,6 +2,8 @@
 Cílem projektu je vyzkoušet si základní znalosti jazyka CSS, jednotlivých CSS pravidel a schopnost aplikovat různé typy CSS selektorů.
 ## What is ITW?
  Introduction, principles of the Internet, addresses, documents. HTML language, bookmarks, simple presentations. Quality style, integration with HTML. Adaptive design, design for mobile devices. Download JavaScript. Design web presentation, navigation structure. Usability and accessibility of websites. Search engine optimization. [Click here for more information](https://www.fit.vut.cz/study/course/244890/.cs)
+ ## Preview
+ [preview](./preview.PNG)
  ## Project task in czech
 - #header (záhlaví)
 > výška: velikost viewportu, ale minimálně 400px
@@ -27,7 +29,7 @@ Cílem projektu je vyzkoušet si základní znalosti jazyka CSS, jednotlivých C
 - #services
 > šířka karty: 300px <br />
 > mezera mezi kartami: 40px <br />
-> rámeček s ikonou: <br />
+- rámeček s ikonou:
 > velikost: 50px <br />
 > vycpávka: 5px <br />
 > čára rámečku: 1px <br />
@@ -58,7 +60,8 @@ Cílem projektu je vyzkoušet si základní znalosti jazyka CSS, jednotlivých C
 > mezera mezi vstupními položkami: 20px <br />
 > vycpávka vstupních položek: 10px <br />
 > text nevalidního vstupu: red <br />
-> barva tlačítka po najetí kurzorem: green 10: #footer <br />
+> barva tlačítka po najetí kurzorem: green 
+- #footer 
 > horní a spodní odsazení sekce: 40px <br />
 > Vlastnosti, které nejsou výše specifikovány se pokuste odhadnout z uvedených snímků (není nutné, > aby bylo na pixel přesné - viz. pozn. #2)
 
