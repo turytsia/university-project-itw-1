@@ -18,14 +18,14 @@
     --white: #f7f7f7;
 }
 
+body {
+    font-family: 'PT Sans';
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'PT Sans';
 }
 
 a {
@@ -34,7 +34,6 @@ a {
 
 .content {
     max-width: 1200px;
-    min-width: 768px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -49,13 +48,14 @@ p {
 
 section {
     padding: 60px 0 80px;
+    min-width: 768px;
 }
 
 
 /* Header */
 
 #header {
-    min-width: 400px;
+    min-height: 400px;
     background-image: url('../img/header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,7 +73,8 @@ section {
 #header-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
 }
 
 #header-menu i {
@@ -90,6 +91,10 @@ section {
     color: var(--blue);
 }
 
+#logo a:hover {
+    color: white;
+}
+
 
 /* networks & contacts */
 
@@ -99,8 +104,16 @@ section {
     grid-row: 2;
 }
 
+#networks i:hover {
+    color: white;
+}
+
 #contacts a {
     color: var(--lightGray);
+}
+
+#mail a:hover {
+    color: white;
 }
 
 #networks,
@@ -117,10 +130,8 @@ section {
 /* navigation */
 
 #navigation {
+    margin-top: 15px;
     letter-spacing: .05em;
-    font-size: 13px;
-    padding: 5px 15px;
-    border: 1px;
     grid-column: 1;
     grid-row: 2;
     text-transform: uppercase;
@@ -133,11 +144,18 @@ section {
 }
 
 #navigation li {
-    padding: 10px 5px;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    transition: .5s;
+}
+
+#navigation li:hover {
+    border: 1px solid var(--gray);
 }
 
 #navigation a {
     color: var(--gray);
+    font-size: 13px;
 }
 
 
@@ -148,7 +166,7 @@ section {
     margin: 0 0 20px 20px;
     height: 66%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
 }
@@ -158,11 +176,21 @@ section {
 }
 
 #get-started {
+    margin-top: 40px;
     display: inline;
-    text-transform: uppercase;
     padding: 20px;
     border-radius: 15px;
     border: 2px solid var(--darkGray);
+    transition: .5s;
+}
+
+#get-started:hover {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+#get-started:hover a {
+    color: white;
 }
 
 #get-started a {
@@ -200,6 +228,7 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
     text-align: center;
     box-shadow: 0 0 10px var(--gray);
     border-radius: 5px;
+    transition: .5s;
 }
 
 .services-card p {
@@ -223,6 +252,23 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
     width: 50px;
     border: 1px solid var(--blue);
     margin: 10px 0 20px;
+}
+
+.services-column:hover {
+    box-shadow: 0 0 10px var(--blue);
+}
+
+.services-column:hover h3 {
+    color: var(--blue);
+}
+
+.services-column:hover img:last-child {
+    display: inline;
+    background-color: var(--blue);
+}
+
+.services-column:hover img:first-child {
+    display: none;
 }
 
 .services-column img:last-child {
@@ -293,4 +339,314 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
     border-radius: 5px;
     box-shadow: 0 0 10px var(--gray);
     text-align: center;
+    transition: .5s;
+}
+
+.team-card h3 {
+    font-size: 24px;
+    padding: 30px 0 10px;
+}
+
+.team-card:hover {
+    box-shadow: 0 0 10px var(--blue);
+}
+
+.team-card:hover h3 {
+    color: var(--blue);
+}
+
+.team-card p {
+    font-size: 14px;
+    padding: 5px 10px 10px 10px;
+    color: var(--gray);
+}
+
+.team-card h4 {
+    color: var(--lightGray);
+}
+
+#stats {
+    border-top: 1px dashed black;
+}
+
+#stats .content {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stats-card {
+    max-width: 300;
+    margin: auto;
+    background-color: var(--darkGray);
+    text-align: center;
+    width: 80%;
+    border-radius: 5px;
+    position: relative;
+    padding: 40px 0 15px;
+    color: white;
+    transition: .5s;
+}
+
+.stats-card:hover {
+    background-color: var(--blue);
+}
+
+.stats-card p {
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.stats-card i {
+    position: absolute;
+    top: -20px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 32px;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    color: var(--blue);
+}
+
+
+/* price */
+
+#price {
+    background-color: var(--white);
+}
+
+#price h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#price thead th {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#price table {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+#price tr {
+    transition: .5s;
+}
+
+#price tr:hover {
+    background-color: white;
+    color: var(--blue);
+}
+
+#price tr:hover td {
+    color: var(--blue);
+}
+
+#price td {
+    color: var(--lightGray);
+    padding: 20px;
+    border-top: 1px dashed var(--blue);
+    border-bottom: 1px dashed var(--blue);
+}
+
+#price button {
+    padding: 20px;
+    border: 1px solid var(--blue);
+    background: transparent;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#price button:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+#price tbody li {
+    padding: 2px 0;
+}
+
+#price tbody li:first-child {
+    list-style-type: none;
+    font-weight: 600;
+}
+
+
+/* refs */
+
+#refs {
+    border-bottom: 1px dashed black;
+}
+
+#refs .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.refs-card {
+    max-width: 400px;
+    display: block;
+    transition: .5s;
+}
+
+.refs-card blockquote {
+    background-color: var(--darkGray);
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    padding: 20px 40px;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.refs-card blockquote::before {
+    content: '\"';
+    font-style: italic;
+    font-size: 85px;
+    color: var(--blue);
+    position: absolute;
+    left: 2px;
+    top: 55px;
+    line-height: 0;
+}
+
+.refs-card blockquote::after {
+    content: '';
+    position: absolute;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--darkGray);
+    bottom: -20px;
+    left: 30px;
+}
+
+.refs-card:hover blockquote {
+    background-color: var(--blue);
+}
+
+.refs-card:hover blockquote::after {
+    border-top: 20px solid var(--blue);
+}
+
+.refs-card:hover blockquote::before {
+    color: white;
+}
+
+.refs-card:hover figure h3 {
+    color: var(--blue);
+}
+
+#refs figure img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.refs-card figure h3 {
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 20px;
+    color: var(--lightGray);
+}
+
+#refs figure {
+    display: flex;
+    align-items: center;
+}
+
+
+/* contact */
+
+#contact .content {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#contact h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#map {
+    height: 400px;
+}
+
+#contact form {
+    padding: 20px 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    font-family: 'PT Sans';
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+}
+
+#contact input:last-child {
+    background-color: var(--blue);
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 50%;
+    margin: 0 auto;
+    transition: .5s;
+    border: none;
+}
+
+#contact input:last-child:hover {
+    background-color: green;
+}
+
+#contact input:invalid,
+#contact textarea:invalid {
+    color: red;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: var(--lightGray);
+}
+
+#contact-subject {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#contact-message {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+/* Footer */
+
+#footer {
+    background-color: black;
+    padding: 40px 0;
+}
+
+#footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer span:first-child {
+    color: var(--lightGray);
+    font-size: 14px;
+}
+
+#footer span:last-child a {
+    color: var(--blue);
 }
