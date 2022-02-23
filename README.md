@@ -3,7 +3,7 @@ Cílem projektu je vyzkoušet si základní znalosti jazyka CSS, jednotlivých C
 ## What is ITW?
  Introduction, principles of the Internet, addresses, documents. HTML language, bookmarks, simple presentations. Quality style, integration with HTML. Adaptive design, design for mobile devices. Download JavaScript. Design web presentation, navigation structure. Usability and accessibility of websites. Search engine optimization. [Click here for more information](https://www.fit.vut.cz/study/course/244890/.cs)
  ## Preview
- [preview](./preview.PNG)
+ ![preview](./preview.PNG)
  ## Project task in czech
 - #header (záhlaví)
 > výška: velikost viewportu, ale minimálně 400px
