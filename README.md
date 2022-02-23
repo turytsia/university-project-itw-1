@@ -64,4 +64,6 @@ Cílem projektu je vyzkoušet si základní znalosti jazyka CSS, jednotlivých C
 - #footer 
 > horní a spodní odsazení sekce: 40px <br />
 > Vlastnosti, které nejsou výše specifikovány se pokuste odhadnout z uvedených snímků (není nutné, > aby bylo na pixel přesné - viz. pozn. #2)
+## Results
+---
 
