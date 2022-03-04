@@ -444,7 +444,7 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
 }
 
 .stats-card {
-    max-width: 300;
+    max-width: 300px;
     margin: auto;
     background-color: var(--darkGray);
     text-align: center;
@@ -671,6 +671,10 @@ section:nth-child(2n+1):not(#stats):not(#price) h2 {
     color: var(--blue);
     border: 1px solid var(--blue);
     border-radius: 5px;
+}
+
+#contact textarea {
+    resize: vertical;
 }
 
 #contact input:last-child {
