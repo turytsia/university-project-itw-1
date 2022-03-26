@@ -1,23 +1,23 @@
 # ITW Project
 Cílem projektu je vyzkoušet si základní znalosti jazyka CSS, jednotlivých CSS pravidel a schopnost aplikovat různé typy CSS selektorů.
 ## What is ITW?
- Introduction, principles of the Internet, addresses, documents. HTML language, bookmarks, simple presentations. Quality style, integration with HTML. Adaptive design, design for mobile devices. Download JavaScript. Design web presentation, navigation structure. Usability and accessibility of websites. Search engine optimization. [Click here for more information](https://www.fit.vut.cz/study/course/244890/.cs)
- ## Preview
+You can learn more about the course [here](https://www.fit.vut.cz/study/course/244890/.cs)
+## Preview
  ![preview](./preview.PNG)
- ## Project task in czech
-- #header (záhlaví)
+## Project task [CZ]
+### #header (záhlaví)
 > výška: velikost viewportu, ale minimálně 400px
-- menu:
+### menu:
 > horní okraj: 10px
-- logo:
+### logo:
 > písmo: 25px <br />
 > vzdálenost mezi položkami menu: 10px <br />
-- navigace:
+### navigace:
 > písmo 13px <br />
 > mezera mezi písmeny: .05em <br />
 > vycpávka: 5px vertikální a 15px horizontálně <br />
 > rámeček: 1px
-- hlavní nadpis:
+### hlavní nadpis:
 > písmo: 64px, white <br />
 > odsazení zespodu a zleva: 20px <br />
 > tlačítko Get started: <br />
@@ -26,44 +26,44 @@ Cílem projektu je vyzkoušet si základní znalosti jazyka CSS, jednotlivých C
 > rámeček: 2px <br />
 > zaoblení: 15px <br />
 > hlavní nadpis spolu s tlačítkem umístěn v 2/3 záhlaví
-- #services
+### #services
 > šířka karty: 300px <br />
 > mezera mezi kartami: 40px <br />
-- rámeček s ikonou:
+### rámeček s ikonou:
 > velikost: 50px <br />
 > vycpávka: 5px <br />
 > čára rámečku: 1px <br />
 > implementujte styly tak, aby bylo možné přidat další elementy .services-column
-- #about
+### #about
 > velikost obrázku: 40%, 50% (po najetí kurzoru) <br />
 > mezera mezi obrázkem a odstavcem: 40px (vertikální), 80px (horizontálně) <br />
 > implementujte styly tak, aby bylo možné přidat další elementy .about-item a obrázky se pozicovaly <br />střídavě na levou a pravou stranu
-- #team
+### #team
 > karty mají stejnou šířku <br />
 > mezera mezi kartami: 20px
-- #stats
+### #stats
 > karty mají stejnou šířku <br />
 > maximální šířka karty: 300px <br />
 > minimální mezera mezi kartami: 20px <br />
 > velikost písma ikonky: 32px
-- #price
+### #price
 > šířka tabulka: 80% <br />
 > mezera mezi řádky 20px <br />
 > vycpávka řádku: 20px <br />
 > vycpávka tlačítka: 20px
-- #refs
+### #refs
 > karty mají stejnou šířku <br />
 > maximální šířka karty: 400px <br />
 > velikost obrázku: 60px
-- #contact
+### #contact
 > výška mapy: 400px <br />
 > mezera mezi vstupními položkami: 20px <br />
 > vycpávka vstupních položek: 10px <br />
 > text nevalidního vstupu: red <br />
 > barva tlačítka po najetí kurzorem: green 
-- #footer 
+### #footer 
 > horní a spodní odsazení sekce: 40px <br />
 > Vlastnosti, které nejsou výše specifikovány se pokuste odhadnout z uvedených snímků (není nutné, > aby bylo na pixel přesné - viz. pozn. #2)
 ## Results
----
+**--/20**
 
