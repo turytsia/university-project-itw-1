@@ -65,5 +65,5 @@ You can learn more about the course [here](https://www.fit.vut.cz/study/course/2
 > horní a spodní odsazení sekce: 40px <br />
 > Vlastnosti, které nejsou výše specifikovány se pokuste odhadnout z uvedených snímků (není nutné, > aby bylo na pixel přesné - viz. pozn. #2)
 ## Results
-**--/20**
+`19 / 20`
 
